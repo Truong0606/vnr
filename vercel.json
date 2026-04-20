@@ -1,10 +1,5 @@
 {
-  "buildCommand": "cd client && npm run build",
+  "buildCommand": "cd client && npm install && npm run build",
   "outputDirectory": "client/dist",
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "client/dist/index.html"
-    }
-  ]
+  "installCommand": "npm install"
 }
